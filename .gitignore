@@ -1,0 +1,9 @@
+#Visual studio related files
+Practice/.vs/*
+Practice/Problems/obj/*
+Practice/Problems/bin/*
+Practice/DataStructureAndAlgorithms/obj/*
+Practice/Problems.UnitTest/obj/*
+
+#Unit tests
+Practice/Problems.UnitTest/bin/*
