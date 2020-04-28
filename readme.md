@@ -1,11 +1,11 @@
 # Problems
 001 - Get non repeating characters
-+ Descirption: Using and algorithm O(n) create a function that returns the followig:
-non_repeating("aabcb") -> c
-non_repeating("xxyz") -> y
-non_repeating("aabb")-> null
++ Descirption: Using and algorithm O(n) create a function that returns the followig:\
+non_repeating("aabcb") -> c\
+non_repeating("xxyz") -> y\
+non_repeating("aabb")-> null\
 
-+ Solution: 
++ Solution:\ 
 
 002 - 
 
