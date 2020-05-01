@@ -3,7 +3,7 @@ using Problems;
 
 namespace Problems.UnitTest
 {
-    public class Tests
+    public class P001
     {
         P001_GetFirstNonRepeatingCharacter problem;
         [SetUp]
