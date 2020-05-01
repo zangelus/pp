@@ -23,17 +23,23 @@
 >4) Same strings: They are one away strings automatically.
 
 >**Solution**
->1) Evaluate of both strings are equal or more than 2 characters different. If not go 2\
->1.1) Return false\
+>1) Evaluate whether both strings have more than 2 characters in lenght difference. If not go 2\
+>1.1) Return "false"\
 >2) Evaluate if both string have the same lenght. If not go to 3\
 >2.1) Create a flag diff to store amount of different characters\
 >2.2) Iterate both strings\ 
 >2.2.1) increase diff if characters are not equal\
 >2.2.2) if diff is bigger than 1, return "false"\
 >2.3) if iteration gets to the end, return "true\
->3) Determine which of the strings have the extra character. If string #1 go to 3.1 otherwise 3.2
->3.1) AreDiffLenghtStringOneAway(string1, string2)
->3.2) ArediffLenghtStringOneAwat(string2, string1)
+>3) One of the strings is 1 character larger. Determine which of the strings is larger. If string #1 is larger go to 3.1 otherwise 3.2\
+>3.1) The String 1 is larger\
+>3.1.1) Create a flag "pad" and use it as index padding\
+>3.1.2) Iterate both strings using the same index, but use the "pad" flag in addition to the index in the larger string\
+>3.2.3) If element are not equal, increase the "pad" flag and run the cycle without increase the index, otherwise run 3.2.3\
+>3.2.3) increase the index\
+>3.2.4) evaluate the flag "pad", if bigger than 1 then return "false". Otherwise, continue the cycle\
+>3.2.5) if the iteration complets, return true\
+>3.2) Same as with 3.1, but the String 2 is the largest.
 
 # Algorithms
 001 - Binary Search Tree

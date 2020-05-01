@@ -19,11 +19,11 @@ namespace Problems
             }
             else if (s1.Length > s2.Length)
             {
-                return AreDiffLenghtStringOneAway(s1, s2);
+                return AreDiffLenghtStringOneAway1(s1, s2);
             }
             else
             {
-                return AreDiffLenghtStringOneAway(s2, s1);
+                return AreDiffLenghtStringOneAway1(s2, s1);
             }
        }
 
@@ -44,6 +44,29 @@ namespace Problems
                 {
                     i++;
                 }
+            }
+
+            return true;
+        }
+
+        private bool AreDiffLenghtStringOneAway1(string s1, string s2) 
+        {
+            char[] larger  = s1.ToCharArray();
+            char[] shorter = s2.ToCharArray();
+            int i = 0;
+            int padding = 0;
+            while (i < shorter.Length)
+            {
+                if(shorter[i] == larger[i + padding])
+                {
+                    i++;
+                }
+                else
+                {
+                    padding++;
+                }
+
+                if (padding > 1) return false;
             }
 
             return true;
