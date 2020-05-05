@@ -49,6 +49,22 @@ One away strings have the following properties:
 3.1.6. if the iteration complets, return true\
 3.2. Same as with 3.1, but the String 2 is the largest
 
+
+## 003 - Assing numbers in minesweeper
+
+### Description:
+
+1. Create a function mine_sweeper(position_of_bombs, num_rows, num_columns)	
+2. The function returns a matrix with the position of the bombs indicated with -1 and every other cell indicates the number of bombs sourrounding that cell.
+
+### Solution:
+1. Create a matrix with the size of row and column filled with zeroes
+2. Iterate over the array of tuples where each tupple is: (position x, position y)
+2.1. Find the position in the matrix and assign the value -1\
+2.2. Iterate over the 9 sourrounding blocks given the position x,y and increment the value to 1 if:\
+2.2.1. The position is not -1\
+2.2.2. The position is withing the valid range of the matrix (row/colums)
+
 # Algorithms
 001 - Binary Search Tree
 
