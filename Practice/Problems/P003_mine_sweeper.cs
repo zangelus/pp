@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Problems
 {
-    public class P003_mineSweeper
+    public class P003_mine_sweeper
     {
         public int NumColumns { get; set; }
         public int NumRows { get; set; }

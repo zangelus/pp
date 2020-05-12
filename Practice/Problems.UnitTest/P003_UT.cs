@@ -7,12 +7,12 @@ namespace Problems.UnitTest
 {
     class P003_UT
     {
-        public P003_mineSweeper problem;
+        public P003_mine_sweeper problem;
         
         [SetUp]
         public void Setup()
         {
-            problem = new P003_mineSweeper();
+            problem = new P003_mine_sweeper();
         }
 
         [Test, TestCaseSource("TestCases")]

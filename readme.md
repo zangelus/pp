@@ -60,10 +60,25 @@ One away strings have the following properties:
 ### Solution:
 1. Create a matrix with the size of row and column filled with zeroes
 2. Iterate over the array of tuples where each tupple is: (position x, position y)
-2.1. Find the position in the matrix and assign the value -1\
+	2.1. Find the position in the matrix and assign the value -1\
 2.2. Iterate over the 9 sourrounding blocks given the position x,y and increment the value to 1 if:\
 2.2.1. The position is not -1\
 2.2.2. The position is withing the valid range of the matrix (row/colums)
+
+## 004 - Where to expand minesweeper
+
+### Description:
+
+1. Create a function in mine_sweeper named click that takes 5 arguments (detailed_matrix, num_rows, num_columns, given i, givem j)	
+2. if the user clicks in a position that has a bomb or a number bigger than 0 then return the same matrix
+3. if the user click in a position that has zero value then indicates with -2 all the positions that are expanded. These positions are next to each other. Note that diagonal positions are consider next to each other as well.
+
+### Solution:
+1. If the cell value is not equal to zero then return the matrix
+2. Create a Queue "NextPos" to add more cells to be mark as the search continues
+3. We know the cell is equal to zero then change the value to -2.
+4. Explore the 8 cells around the current position and everytime a zero is found, add the position to the NextPos queue
+5. Repeat until there is no more positions in the Queue
 
 # Algorithms
 001 - Binary Search Tree
