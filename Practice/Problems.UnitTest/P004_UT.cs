@@ -22,7 +22,7 @@ namespace Problems.UnitTest
         }
 
         [Test, TestCaseSource("TestCases")]
-        public void TestDeapthFirstSearch(int[,] field, int row, int col, int[,] expected)
+        public void TestDepthFirstSearch(int[,] field, int row, int col, int[,] expected)
         {
             int[,] result = problem.Depth_first_search(field, (row, col));
             Assert.AreEqual(expected, result);

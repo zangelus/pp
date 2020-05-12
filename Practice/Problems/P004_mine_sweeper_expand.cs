@@ -32,6 +32,7 @@ namespace Problems
                 {
                     for (int row = currentPos.row - 1; row <= currentPos.row + 1; row++)
                     {
+                        
                         if (col == currentPos.col && row == currentPos.row)
                         {
                             if (matrix[row, col] == 0)
@@ -48,6 +49,7 @@ namespace Problems
                                 nextPosition.Enqueue((row, col));
                             }
                         }
+                        
                     }
                 }
             }
