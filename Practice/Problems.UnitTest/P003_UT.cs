@@ -16,7 +16,7 @@ namespace Problems.UnitTest
         }
 
         [Test, TestCaseSource("TestCases")]
-        public void UnitTestProblem(int rows, int columns, (int x, int y)[] bombPositions, string result )
+        public void FillCellWithTheNumberOfBomsAround(int rows, int columns, (int x, int y)[] bombPositions, string result )
         {
             problem.CreateMatrix(bombPositions, rows, columns);
 

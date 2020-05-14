@@ -17,7 +17,13 @@ namespace Problems
             int[,] matrix = new int[rows , columns ];
             Array.Copy(field,0,matrix,0,field.Length);
 
-            if (matrix[click.row, click.col] != 0) { return matrix; }
+            if (matrix[click.row, click.col] != 0) {
+                return matrix; 
+            }
+            else
+            {
+                matrix[click.row, click.col] = -2;
+            }
 
             minIndex = (0, 0);
             maxIndex = (rows - 1, columns - 1);
@@ -33,23 +39,13 @@ namespace Problems
                     for (int row = currentPos.row - 1; row <= currentPos.row + 1; row++)
                     {
                         
-                        if (col == currentPos.col && row == currentPos.row)
+                        if(col >= minIndex.col && col <= maxIndex.col &&
+                           row >= minIndex.row && row <= maxIndex.row &&
+                           matrix[row,col] == 0)
                         {
-                            if (matrix[row, col] == 0)
-                            {
-                                matrix[row, col] = -2;
-                            }
+                            matrix[row, col] = -2;
+                            nextPosition.Enqueue((row, col));
                         }
-                        else
-                        {
-                            if(col >= minIndex.col && col <= maxIndex.col &&
-                               row >= minIndex.row && row <= maxIndex.row &&
-                               matrix[row,col] == 0)
-                            {
-                                nextPosition.Enqueue((row, col));
-                            }
-                        }
-                        
                     }
                 }
             }
