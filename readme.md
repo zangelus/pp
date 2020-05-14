@@ -80,6 +80,8 @@ One away strings have the following properties:
 4. Explore the 8 cells around the current position and everytime a zero is found, add the position to the NextPos queue
 5. Repeat until there is no more positions in the Queue
 
+<img src="Resource/breath-first-search.png" width="512">
+
 # Algorithms
 001 - Binary Search Tree
 
