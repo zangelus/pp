@@ -74,13 +74,16 @@ One away strings have the following properties:
 3. if the user click in a position that has zero value then indicates with -2 all the positions that are expanded. These positions are next to each other. Note that diagonal positions are consider next to each other as well.
 
 ### Solution:
-1. If the cell value is not equal to zero then return the matrix
-2. Create a Queue "NextPos" to add more cells to be mark as the search continues
-3. We know the cell is equal to zero then change the value to -2.
-4. Explore the 8 cells around the current position and everytime a zero is found, add the position to the NextPos queue
-5. Repeat until there is no more positions in the Queue
-
+1. If the cell value is not equal to zero then return the matrix.
+2. Create a Queue because the search can be of two types: 1) Depth-First-Search and 2) Breath-First-Search. In this case it will be use Breath-First-Search becuase the time complexity NxM (search all the columns and rows) is similar to the other techinique but the space complexity is 2(N+M) as ilustrated in the figure below.
 <img src="Resource/breath-first-search.png" width="512">
+3. Set the value of the cell position to -2
+4. Add the cell position to the Queue
+5. Iterate the Queue while there is elements in it
+6. Given the position of the cell to start to search given by the Queue, find the 8 elements around the cell.
+7. If the element is not 0 then ignore it
+8. If the element is 0, change it to -2 and add the position to the Queue because there could be a cell with 0 next to it
+
 
 # Algorithms
 001 - Binary Search Tree
