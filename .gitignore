@@ -3,6 +3,7 @@ Practice/.vs/*
 Practice/Problems/obj/*
 Practice/Problems/bin/*
 Practice/DataStructureAndAlgorithms/obj/*
+Practice/DataStructureAndAlgorithms/bin/*
 Practice/Problems.UnitTest/obj/*
 
 #Unit tests

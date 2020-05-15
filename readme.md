@@ -83,7 +83,7 @@ One away strings have the following properties:
 6. Given the position of the cell to start to search given by the Queue, find the 8 elements around the cell.
 7. If the element is not 0 then ignore it
 8. If the element is 0, change it to -2 and add the position to the Queue because there could be a cell with 0 next to it
-
+  
 
 # Algorithms
 001 - Binary Search Tree
