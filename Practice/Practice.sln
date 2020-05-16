@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problems.UnitTest", "Proble
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructureAndAlgorithms", "DataStructureAndAlgorithms\DataStructureAndAlgorithms.csproj", "{2E2D0CC8-F92C-4557-A0A7-171DA950C21B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "..\calculator\Calculator\Calculator\Calculator.csproj", "{78B86597-521C-4130-9603-A3A500CF779F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{2E2D0CC8-F92C-4557-A0A7-171DA950C21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2D0CC8-F92C-4557-A0A7-171DA950C21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E2D0CC8-F92C-4557-A0A7-171DA950C21B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78B86597-521C-4130-9603-A3A500CF779F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78B86597-521C-4130-9603-A3A500CF779F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78B86597-521C-4130-9603-A3A500CF779F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78B86597-521C-4130-9603-A3A500CF779F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

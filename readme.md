@@ -83,6 +83,24 @@ One away strings have the following properties:
 6. Given the position of the cell to start to search given by the Queue, find the 8 elements around the cell.
 7. If the element is not 0 then ignore it
 8. If the element is 0, change it to -2 and add the position to the Queue because there could be a cell with 0 next to it
+
+## 005 - Rotating a 2D array
+
+### Description
+Create function foo(array, n) where array is a (n)x(n) dimension array and (n) is de dimension that returns an array that rotates they rows into column.
+
+### Solution 1: Create a new matrix that holds the re-arrange data
+
+1. The solution consist in converting a row into a column in reverse order.
+2. Iterate original matrix from the last row
+3. Copy the 1D array in a Buffer array
+4. Copy the Buffer into the new matrix's first column. Note that elements in the array remain in the same order.
+
+### Solution 2: Using the same matrix, re-arrange the elements
+
+1. Invert the order of the rows in the original matrix. The first row becomes the last one and so on.
+1.1. Iterate N/2 - 1 times and using a buffer change the order
+2. Do a diagonal move of the items. To be think later.
   
 
 # Algorithms
