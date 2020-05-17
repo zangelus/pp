@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataStructureAndAlgorithms\DataStructureAndAlgorithms.csproj" />
+    <ProjectReference Include="..\ExtensionMethods\ExtensionMethods.csproj" />
     <ProjectReference Include="..\Problems\Problems.csproj" />
   </ItemGroup>
 

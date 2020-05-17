@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 namespace Problems.UnitTest
 {
+    [TestFixture]
     class P002_UT
     {
         public P002_one_away_string problem;

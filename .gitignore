@@ -5,6 +5,8 @@ Practice/Problems/bin/*
 Practice/DataStructureAndAlgorithms/obj/*
 Practice/DataStructureAndAlgorithms/bin/*
 Practice/Problems.UnitTest/obj/*
+obj/
+bin/
 
 #Unit tests
 Practice/Problems.UnitTest/bin/*

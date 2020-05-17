@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 namespace Problems.UnitTest
 {
+    [TestFixture]
     class P004_UT
     {
         public P004_mine_sweeper_expand problem;
