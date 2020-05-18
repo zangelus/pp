@@ -2,7 +2,7 @@
 
 namespace ExtensionMethods
 {
-    public static class StringExtension
+    public static class EM001_StringExtension
     {
         public static int CountCharacteres(this String st)
         {
