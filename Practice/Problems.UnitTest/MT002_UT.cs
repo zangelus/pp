@@ -9,9 +9,15 @@ namespace Problems.UnitTest
     class MT002_UT
     {
         [Test]
-        public void Test1()
+        public void Task_return_void()
         {
-            MT002_task.Test1();
+            MT002_task.Example1();
+        }
+
+        [Test]
+        public void Task_return_string()
+        {
+            MT002_task.Example2();
         }
     }
 }

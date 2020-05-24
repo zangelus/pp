@@ -11,7 +11,7 @@ namespace Problems.UnitTest
         [Test]
         public void Test1()
         {
-            MT020_TAP.Main1();
+            //MT020_TAP.Main1();
         }
 
     }

@@ -35,7 +35,7 @@ namespace MultiThread
                     Download_Using_Task();
                     break;
                 case 3:
-                    Download_with_async_await();
+                    //Download_with_async_await();
                     break;
                 default:
                     break;
@@ -47,7 +47,7 @@ namespace MultiThread
 
         public static void Example1()
         {
-            Download_with_async_await();
+            //Download_with_async_await();
             Console.WriteLine("Doing something else");
         }
 
@@ -59,6 +59,7 @@ namespace MultiThread
          * method. It makes very convenit to see it in written
          * code/
         */
+        /*
         private async static Download_with_async_await()
         {
             //var downloader = new WebClient();
@@ -68,7 +69,7 @@ namespace MultiThread
             byte[] rawdata = await SimulateDownload();
             Console.WriteLine("Length is: " + rawdata.Length);
         }
-
+        */
         private static Task<byte[]> SimulateDownload()
         {
             return Task.Factory.StartNew<byte[]>(()=> 

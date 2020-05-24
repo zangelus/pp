@@ -26,9 +26,32 @@ namespace MultiThread
                 }
                 else if (cki.Key == ConsoleKey.D2)
                 {
-                    Console.WriteLine("2 selected");
-                    //MT002_task.Example2();
-                    MT002_task.Example3();
+                    Console.WriteLine("Task section selected");
+                    Console.WriteLine("Enter an option to continue: ");
+                    Console.WriteLine("1- Task return void");
+                    Console.WriteLine("2- Task return string");
+                    Console.WriteLine("3- Task return IO operation");
+                    Console.WriteLine("4- Task delay example");
+
+                    cki = Console.ReadKey();
+                    Console.Clear();
+
+                    if (cki.Key == ConsoleKey.D1)
+                    {
+                        MT002_task.Example1();
+                    }
+                    else if (cki.Key == ConsoleKey.D2)
+                    {
+                        MT002_task.Example2();
+                    }
+                    else if (cki.Key == ConsoleKey.D3)
+                    {
+                        MT002_task.Example3();
+                    }
+                    else if (cki.Key == ConsoleKey.D4)
+                    {
+                        MT002_task.Task_Delay_Operation();
+                    }
                 }
                 else if (cki.Key == ConsoleKey.D3)
                 {
@@ -52,6 +75,7 @@ namespace MultiThread
                 Console.WriteLine("3 - Task Asynchronous Pattern");
 
                 cki = Console.ReadKey();
+                Console.Clear();
             }
         }
     }
