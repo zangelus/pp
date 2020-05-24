@@ -218,8 +218,55 @@ namespace DataStructureAndAlgorithms
         }
     }
 
+    /* Yield example
+    *******************************************************
+    * Another strategy to creating an interator is directly 
+    * using the keyword yield. In fact, this avoid the 
+    * creation of IEnumerable and IEnumerators for the 
+    * custom collection.
+    * 
+    * When a yield return statement is reached in the 
+    * iterator method, expression is returned, and the 
+    * current location in code is retained. Execution 
+    * is restarted from that location the next time that 
+    * the iterator function is called.
+    ******************************************************
+    */
+
+    public class YieldOperator
+    {
+
+        public IEnumerable<int> GetSingleDigitNumbers1()
+        {
+            yield return 9;
+            yield return 8;
+            yield return 7;
+            yield return 6;
+            yield return 5;
+            yield return 4;
+            yield return 3;
+            yield return 2;
+            yield return 1;
+            yield return 0;
+        }
+        public IEnumerable<int> GetSingleDigitNumbers2()
+        {
+            int i = 0;
+
+            while (i < 10)
+            {
+                yield return i++;
+            }
+        }
+
+
+
+    }
+
 
     //references to add to readme
     //https://www.claudiobernasconi.ch/2013/07/22/when-to-use-ienumerable-icollection-ilist-and-list/
+    //https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield
+    //https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=netcore-3.1
 
 }

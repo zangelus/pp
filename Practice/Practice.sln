@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructureAndAlgorithms"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{88C111D8-A856-4B8E-8694-0DB2C30CBD07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThread", "MultiThread\MultiThread.csproj", "{C2576048-E8AD-47EA-A665-690CE1280089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{567BDC52-476A-4EBF-90E3-1201FBCEF566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{88C111D8-A856-4B8E-8694-0DB2C30CBD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88C111D8-A856-4B8E-8694-0DB2C30CBD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88C111D8-A856-4B8E-8694-0DB2C30CBD07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2576048-E8AD-47EA-A665-690CE1280089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2576048-E8AD-47EA-A665-690CE1280089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2576048-E8AD-47EA-A665-690CE1280089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2576048-E8AD-47EA-A665-690CE1280089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567BDC52-476A-4EBF-90E3-1201FBCEF566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567BDC52-476A-4EBF-90E3-1201FBCEF566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567BDC52-476A-4EBF-90E3-1201FBCEF566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567BDC52-476A-4EBF-90E3-1201FBCEF566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
