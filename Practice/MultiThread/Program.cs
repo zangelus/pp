@@ -13,7 +13,8 @@ namespace MultiThread
             Console.WriteLine("Enter an option to continue: ");
             Console.WriteLine("1 - Thread");
             Console.WriteLine("2 - Task");
-            Console.WriteLine("3 - Task Asynchronous Pattern");
+            Console.WriteLine("3 - Syncronization");
+            Console.WriteLine("4 - Task Asynchronous Pattern");
 
             ConsoleKeyInfo cki = Console.ReadKey();
             Console.Clear();
@@ -32,6 +33,9 @@ namespace MultiThread
                     Console.WriteLine("2- Task return string");
                     Console.WriteLine("3- Task return IO operation");
                     Console.WriteLine("4- Task delay example");
+                    Console.WriteLine("5- Task delay with return data");
+                    Console.WriteLine("6- Task async await big for loop return data");
+                    Console.WriteLine("7- Task continuation");
 
                     cki = Console.ReadKey();
                     Console.Clear();
@@ -52,10 +56,27 @@ namespace MultiThread
                     {
                         MT002_task.Task_Delay_Operation();
                     }
+                    else if (cki.Key == ConsoleKey.D5)
+                    {
+                        MT002_task.Task_Delay_return_data();
+                    }
+                    else if (cki.Key == ConsoleKey.D6)
+                    {
+                        MT002_task.Task_for_loop_return_data();
+                    }
+                    else if (cki.Key == ConsoleKey.D7)
+                    {
+                        MT002_task.TaskContinuation();
+                    }
                 }
                 else if (cki.Key == ConsoleKey.D3)
                 {
                     Console.WriteLine("3 selected");
+                    MT003_syncronization.Locks();
+                }
+                else if (cki.Key == ConsoleKey.D4)
+                {
+                    Console.WriteLine("4 selected");
                     MT020_TAP.Example1();
                 }
                 else
