@@ -8,18 +8,68 @@ using System.Threading.Tasks;
 
 namespace MultiThread
 {
+        /* **************************************************
+        * Notes:
+        * 1) The work executed by a Task object typically 
+        * executed syncronously on a thread pool rather 
+        * than the main application.
+        * 
+        * 2) Most commonly , a lambda expression is used to
+        * specify the work that the task is to perform
+        * 
+        * 3) 
+        * 
+        * 
+        */
+
+
     public class MT002_task
     {
+       
+
         /*Create a Task that returns void*/
         #region Example1
         public static void Example1()
         {
+            /* example initialization 1 - create but do not start it inmediatly*/
             Task taskReturnVoid = new Task(PrintHello);
             taskReturnVoid.Start();
+            taskReturnVoid.Wait();
+
+            /* example initialization 2 - create it and start it*/
+            string data = "data";
+            Task t1 = Task.Run(()=> {
+
+                Thread.Sleep(2000); //Simulates work in the current Thread borrowed from the thread pool
+                Console.WriteLine(
+                    $"Example 2 - Task Id: {Task.CurrentId}, " +
+                    $"Thread Id: {Thread.CurrentThread.ManagedThreadId}, " +
+                    $"Data: {data}");
+            });
+
+            Console.WriteLine($"T1 status: {t1.Status} , T1 is canceled: {t1.IsCanceled}, T1 is completed: {t1.IsCompleted}, T1 is faulted : {t1.IsFaulted}");
+            t1.Wait();
+            Console.WriteLine($"T1 status: {t1.Status} , T1 is canceled: {t1.IsCanceled}, T1 is completed: {t1.IsCompleted}, T1 is faulted : {t1.IsFaulted}");
+
+            /* example innitialization 3 - create it and start it*/
+
+            string data1 = "data1";
+            Task t2 = Task.Factory.StartNew((obj) => 
+            {
+                Thread.Sleep(2000); // Simulates work on the current Thread borrowed from the thread pool
+                Console.WriteLine(
+                    $"Example 3 - Task Id: {Task.CurrentId}, " +
+                    $"Thread Id: {Thread.CurrentThread.ManagedThreadId}, " +
+                    $"Data: {obj}");
+
+            },data1);
+
+            t2.Wait();
         }
+
         private static void PrintHello()
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Example 1 - Hello World");
         }
         #endregion
 
