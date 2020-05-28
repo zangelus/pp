@@ -8,21 +8,6 @@ using System.Threading.Tasks;
 
 namespace MultiThread
 {
-        /* **************************************************
-        * Notes:
-        * 1) The work executed by a Task object typically 
-        * executed syncronously on a thread pool rather 
-        * than the main application.
-        * 
-        * 2) Most commonly , a lambda expression is used to
-        * specify the work that the task is to perform
-        * 
-        * 3) 
-        * 
-        * 
-        */
-
-
     public class MT002_task
     {
        
